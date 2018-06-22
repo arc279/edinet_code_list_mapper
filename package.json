@@ -1,0 +1,48 @@
+{
+  "name": "edinet-code-list-mapper",
+  "version": "1.0.0",
+  "main": "index.js",
+  "author": "Motonobu Kuryu <revision279@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "axios": "^0.18.0",
+    "babel-loader": "^7.1.2",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "css-loader": "^0.28.7",
+    "express": "^4.16.3",
+    "hamljs": "^0.6.2",
+    "iconv-lite": "^0.4.23",
+    "jszip": "^3.1.5",
+    "node-sass": "^4.6.1",
+    "sass-loader": "^6.0.6",
+    "tunnel": "^0.0.5",
+    "vue": "^2.5.4",
+    "vue-loader": "^13.5.0",
+    "vue-style-loader": "^3.0.3",
+    "vue-template-compiler": "^2.5.4",
+    "webpack": "^3.8.1",
+    "whatwg-fetch": "^2.0.3"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "browser-sync": "^2.18.13",
+    "foreman": "^2.0.0",
+    "intelli-espower-loader": "^1.0.1",
+    "karma": "^2.0.2",
+    "karma-chrome-launcher": "^2.2.0",
+    "karma-mocha": "^1.3.0",
+    "karma-webpack": "^3.0.0",
+    "mocha": "^5.2.0",
+    "power-assert": "^1.6.0"
+  },
+  "scripts": {
+    "start": "node src/server.js",
+    "bs": "browser-sync start --config bs-config.js",
+    "watch": "webpack --progress --colors --watch",
+    "test": "mocha --require intelli-espower-loader",
+    "karma": "karma start",
+    "build": "webpack"
+  }
+}
